@@ -1,0 +1,23 @@
+ <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/rlheader"    
+    android:background="#EDEFEC">
+    
+    <ImageView
+        android:id="@+id/profile_image1"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/nav_profileimage"/>
+        
+      
+       
+        
+        
+     
+  
+</RelativeLayout>

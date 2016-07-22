@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cog.DropInn.Search_result" >
+<RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true" >
+
+    
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/arrive_header" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView5"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="26dp"
+        android:text="Arrive"
+        android:textColor="#666666"
+         />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView7"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView5"
+        android:layout_alignBottom="@+id/TextView5"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_marginRight="71dp"
+        android:text="Depart"
+        android:textColor="#666666"
+         />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/show_dialog_button1"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/show_dialog_button"
+        android:layout_alignBottom="@+id/show_dialog_button"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_marginRight="56dp"
+        android:text="      Select Date"
+        android:textStyle="bold"
+        android:textColor="#FF1919"
+        android:layout_centerVertical="true"
+         />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/show_dialog_button"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_below="@+id/TextView5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="17dp"
+        android:text="Select Date"
+        android:textColor="#FF1919"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_header"
+        android:text="More Filters"
+        android:textColor="#ffff"
+        android:textStyle="bold" />
+      <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView2"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+    
+    
+</RelativeLayout>
+<ScrollView
+    android:id="@+id/scroll"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_above="@+id/frame1" 
+    />
+    
+<FrameLayout 
+    android:id="@+id/frame1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/top"
+    android:layout_alignParentBottom="true"
+    >
+
+    <com.cog.DropInn.XListView
+        android:id="@+id/listView10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/frame1" 
+        android:scrollbars="none">
+
+</com.cog.DropInn.XListView>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/header" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView1"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Search Result"
+        android:gravity="center"
+         android:textColor="#FF1919"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/backarrow" />
+
+  
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageView5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:minHeight="270dp"
+   		 android:minWidth="270dp"
+         android:background="@drawable/newyork"
+       
+        android:descendantFocusability="blocksDescendants"
+        
+        />
+    
+      <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"        
+        android:gravity="center"
+        android:text="New York"
+        style="@android:style/TextAppearance.Large"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+         <!-- android:background="#ccc" -->
+         
+         <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView2"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TextView1"
+        android:layout_marginTop="15dp" 
+        android:gravity="center"
+        android:text="Popular Destination"
+        style="@android:style/TextAppearance.Large"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+</RelativeLayout>

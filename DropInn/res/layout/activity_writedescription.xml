@@ -1,0 +1,369 @@
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context="com.cog.DropInn.Writedescription" >
+    
+	        <RelativeLayout
+	            android:id="@+id/header"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp" >
+	            <ImageView
+        android:id="@+id/imageheader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/desc_header" />
+	            
+
+    <ImageView
+         android:id="@+id/done"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/imageheader"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:padding="15dp"
+         android:background="@drawable/color_cursor"
+         android:src="@drawable/done" />
+	            </RelativeLayout>
+    
+ 	<ScrollView 
+	android:id="@+id/ScrollView01"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/header"
+	android:fillViewport="true"
+	android:scrollbars="none" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+	    <FrameLayout
+	        android:id="@+id/frameLayout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="160dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="60dp"
+	        android:background="#ffffff" >
+
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView2"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="16dp"
+	                android:layout_marginTop="17dp"
+	                
+	                android:text="The Space"
+	                android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	                 />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView3"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView8"
+	                android:layout_below="@+id/TextView8"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	                android:text="Guest Access"
+	                 />
+
+	            <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignTop="@+id/TextView3"
+	                android:layout_marginLeft="2dp"
+	                android:layout_marginRight="2dp"
+	                android:src="@drawable/line" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView9"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView3"
+	                android:layout_below="@+id/TextView3"
+	                android:textSize="12sp"
+	                android:textColorHint="#b5b5b5"
+	                android:hint="What will guests have access to?" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView8"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView2"
+	                android:layout_below="@+id/TextView2"
+	                android:textSize="12sp"
+	                android:textColorHint="#b5b5b5"
+	                android:hint="What makes your space unique?" />
+
+	            <ImageView
+	                android:id="@+id/imageView2"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignTop="@+id/TextView01"
+	                android:layout_marginLeft="2dp"
+	                android:layout_marginRight="2dp"
+	                android:src="@drawable/line" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView01"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView9"
+	                android:layout_below="@+id/TextView9"
+	                android:layout_marginTop="20dp"
+	                android:text="Interaction with Guests"
+	                android:textColor="#666666"
+	                android:textSize="14sp"
+	                android:textStyle="bold" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView02"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView01"
+	                android:layout_below="@+id/TextView01"
+	                android:hint="How often do you interact with your guests?"
+	                android:textColorHint="#b5b5b5"
+	                android:textSize="12sp" />
+
+	          
+	        </RelativeLayout>
+	    </FrameLayout>
+
+	    <FrameLayout
+	        android:id="@+id/frameLayout2"
+	        android:layout_width="match_parent"
+	        android:layout_height="112dp"
+	        android:layout_alignLeft="@+id/frameLayout1"
+	        android:layout_alignRight="@+id/frameLayout1"
+	        android:layout_below="@+id/frameLayout1"
+	        android:layout_marginTop="68dp"
+	        android:background="#ffffff" >
+
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView03"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="16dp"
+	                android:layout_marginTop="14dp"
+	                android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	                android:text="Overview" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView04"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView03"
+	                android:layout_below="@+id/TextView03"
+	                android:textSize="12sp"
+	                android:textColorHint="#b5b5b5"
+	                android:hint="What do you love about your Neighbourhood?" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView05"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_above="@+id/TextView06"
+	                android:layout_alignLeft="@+id/TextView04"
+	                android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	                android:text="Getting Around" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView06"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView04"
+	                android:layout_alignParentBottom="true"
+	                android:layout_marginBottom="18dp"
+	                android:textSize="12sp"
+	                android:textColorHint="#b5b5b5"
+	                android:hint="What do you love about your Neighbourhood?" />
+
+	            <ImageView
+	                android:id="@+id/imageView3"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/TextView04"
+	                android:layout_marginLeft="2dp"
+	                
+	                android:src="@drawable/line" />
+
+	        </RelativeLayout>
+
+	    </FrameLayout>
+
+	    <com.cog.DropInn.ThonTextView
+	        android:id="@+id/TextView4"
+	          android:fontFamily="fonts/Thonburi.ttf"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/frameLayout1"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="37dp"
+	        android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	        android:text="The Neighbourhood"
+	        
+	         />
+
+	    <com.cog.DropInn.ThonTextView
+	        android:id="@+id/TextView1"
+	          android:fontFamily="fonts/Thonburi.ttf"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="26dp"
+	        android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	        android:text="Details"
+	        
+	        
+	         />
+
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="110dp"
+	        android:layout_alignLeft="@+id/frameLayout2"
+	        android:layout_alignRight="@+id/frameLayout2"
+	        android:layout_below="@+id/frameLayout2"
+	        android:layout_marginTop="64dp"
+	        android:background="#ffff" >
+
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView08"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="22dp"
+	                android:layout_marginTop="15dp"
+	                android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	                android:text="Other Things to Note"
+	                 />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView09"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView08"
+	                android:layout_below="@+id/TextView08"
+	                android:textSize="12sp"
+	                android:textColorHint="#b5b5b5"
+	                android:hint="Are there any other details you&apos;d like to share?" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView10"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView09"
+	                android:layout_below="@+id/TextView09"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#666666"
+	                android:textSize="14sp"
+        			android:textStyle="bold"
+	                android:text="House Rules" />
+
+	            <com.cog.DropInn.ThonTextView
+	                android:id="@+id/TextView11"
+	                  android:fontFamily="fonts/Thonburi.ttf"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/TextView10"
+	                android:layout_below="@+id/TextView10"
+	                android:textSize="12sp"
+	                android:textColorHint="#b5b5b5"
+	                android:hint="How do you except your guests to behave?" />
+
+	            <ImageView
+	                android:id="@+id/imageView4"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_above="@+id/TextView10"
+	                android:layout_marginLeft="2dp"
+	                android:layout_marginRight="2dp"
+	                android:src="@drawable/line" />
+
+	        </RelativeLayout>
+
+	    </FrameLayout>
+
+	    <com.cog.DropInn.ThonTextView
+	        android:id="@+id/TextView07"
+	          android:fontFamily="fonts/Thonburi.ttf"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/frameLayout2"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="32dp"
+	   
+	        android:text="Extra Details"
+	        android:textColor="#686868"
+	         />
+
+	 <!--    <ProgressBar
+	        android:id="@+id/progressBar1"
+	        style="?android:attr/progressBarStyleLarge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/TextView1"
+	        android:layout_below="@+id/frameLayout1" />
+ -->
+	</RelativeLayout>
+
+	
+</ScrollView>
+</RelativeLayout>

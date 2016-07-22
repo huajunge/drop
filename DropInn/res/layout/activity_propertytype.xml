@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="com.cog.DropInn.Propertytype" >
+
+       
+<!--   <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" > -->
+        
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/desc_header" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/ImageView01"
+        android:layout_alignParentLeft="true"
+             android:layout_marginBottom="3dp"
+        android:background="@drawable/type_bg"
+        android:src="@drawable/color_cursor" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView4"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/type_bg"
+        android:src="@drawable/color_cursor"
+         />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:background="#D3D3D3"
+             android:layout_marginBottom="3dp" />
+
+    <!-- <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/transparent_bg" /> -->
+
+    <com.cog.DropInn.ThonTextView
+          android:id="@+id/TextView1"
+            android:fontFamily="fonts/Thonburi.ttf"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/imageView2"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/imageView1"
+       
+          android:gravity="center"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+          android:text=" Nice! What type of place is your private room in"
+        
+          android:textColor="#666666" 
+          android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/ImageView02"
+        android:layout_alignParentLeft="true"
+             android:layout_marginBottom="3dp"
+             android:src="@drawable/color_cursor"
+        android:background="@drawable/type_bg" />
+
+    <Button
+        android:id="@+id/ImageView02"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:text="More"
+        android:textColor="#FF1919" />
+<!-- 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"      
+        android:layout_below="@+id/ImageView02"
+        android:layout_alignParentBottom="true" >
+    </ListView> -->
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/backarrow" 
+        android:background="@drawable/color_cursor"/>
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView2"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Property Type"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView4"
+        android:background="@null"
+        android:src="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView02"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_below="@+id/imageView4"
+        android:background="@null"
+        android:src="@drawable/cup" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView4"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView01"
+        android:layout_alignLeft="@+id/TextView3"
+        android:layout_alignTop="@+id/imageView4"
+        android:gravity="center"
+        android:text="House"
+        
+        android:textColor="#666666"
+        android:textSize="15sp"
+         />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView5"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView02"
+        android:layout_alignLeft="@+id/TextView4"
+        android:layout_alignTop="@+id/ImageView01"
+        android:gravity="center"
+        android:text="Bed &amp; Breakfast"
+        
+        android:textColor="#666666"
+        android:textSize="15sp"/>
+
+    <ImageButton
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:background="@null"
+        android:src="@drawable/apt" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView3"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:gravity="center"
+        android:text="Apartment"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+</RelativeLayout>

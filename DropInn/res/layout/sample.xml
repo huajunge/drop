@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.cog.DropInn.CustomTextView
+            android:id="@+id/listingtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="23dp"
+             android:fontFamily="Lato"
+            android:text="Listing type" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/listingtype1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/listingtype"
+            android:layout_alignBottom="@+id/listingtype"
+            android:layout_alignParentRight="true"
+             android:fontFamily="Lato"
+            android:layout_marginRight="18dp"
+            android:text="TextView1" />
+
+        <ImageView
+            android:id="@+id/s_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/listingtype"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hr_line" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/listingtype"
+            android:layout_below="@+id/s_imageView1"
+            android:layout_marginTop="10dp"
+             android:fontFamily="Lato"
+            android:text="Accommodates" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/s_TextView4"
+            android:layout_alignBottom="@+id/s_TextView4"
+            android:layout_alignRight="@+id/listingtype1"
+             android:fontFamily="Lato"
+            android:text="None" />
+
+        <ImageView
+            android:id="@+id/s_imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_TextView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+           android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+               android:background="@drawable/hr_line" 
+                android:layout_marginLeft="20dp"
+                
+                android:layout_marginRight="20dp" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/s_TextView4"
+            android:layout_below="@+id/s_imageView2"
+            android:layout_marginTop="10dp"
+             android:fontFamily="Lato"
+            android:text="Bedrooms" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/s_TextView6"
+            android:layout_alignBottom="@+id/s_TextView6"
+            android:layout_alignRight="@+id/s_TextView5"
+             android:fontFamily="Lato"
+            android:text="TextView1" />
+
+        <ImageView
+            android:id="@+id/s_imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_TextView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+               android:background="@drawable/hr_line" 
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/s_TextView6"
+            android:layout_below="@+id/s_imageView3"
+            android:layout_marginTop="10dp"
+             android:fontFamily="Lato"
+            android:text="Beds" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/s_TextView8"
+            android:layout_alignBottom="@+id/s_TextView8"
+            android:layout_alignRight="@+id/s_TextView7"
+             android:fontFamily="Lato"
+            android:text="TextView1" />
+
+        <ImageView
+            android:id="@+id/s_imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_TextView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+               android:background="@drawable/hr_line" 
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/s_TextView8"
+            android:layout_below="@+id/s_imageView4"
+            android:layout_marginTop="10dp"
+             android:fontFamily="Lato"
+            android:text="Bathrooms" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/s_TextView10"
+            android:layout_alignBottom="@+id/s_TextView10"
+            android:layout_alignRight="@+id/s_TextView9"
+             android:fontFamily="Lato"
+            android:text="TextView1" />
+
+        <ImageView
+            android:id="@+id/s_imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_TextView10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+               android:background="@drawable/hr_line" 
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_imageView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+             android:fontFamily="Lato"
+            android:text="Details" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/s_TextView10"
+            android:layout_below="@+id/s_TextView12"
+            android:layout_marginTop="24dp"
+             android:fontFamily="Lato"
+            android:text="Cancellation Policy" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/s_TextView13"
+            android:layout_alignBottom="@+id/s_TextView13"
+            android:layout_alignRight="@+id/s_TextView11"
+             android:fontFamily="Lato"
+            android:text="TextView1" 
+            android:textColor="#FF1919"/>
+
+        <ImageView
+            android:id="@+id/s_imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_TextView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+               android:background="@drawable/hr_line" 
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/s_TextView13"
+            android:layout_below="@+id/s_imageView6"
+            android:layout_marginTop="10dp"
+             android:fontFamily="Lato"
+            android:text="Availability" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/s_TextView15"
+            android:layout_alignBottom="@+id/s_TextView15"
+            android:layout_alignRight="@+id/s_TextView14"
+             android:fontFamily="Lato"
+            android:text="TextView1"
+            android:textColor="#FF1919" />
+
+        <ImageView
+            android:id="@+id/s_imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_TextView15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+          android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+               android:background="@drawable/hr_line" 
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s1_imageView1"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/s_TextView12"
+             android:fontFamily="Lato"
+            android:text="About " />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/s_TextView17"
+            android:layout_alignBottom="@+id/s_TextView17"
+            android:layout_alignLeft="@+id/s_TextView12"
+            android:layout_marginLeft="28dp"
+             android:fontFamily="Lato"
+            android:text="Ramesh kannan" />
+
+         <ImageView
+            android:id="@+id/s_imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_TextView17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/preview_profileimage" />
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_imageView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+             android:fontFamily="Lato"
+            android:text="TextView1" />
+
+        <Button
+            android:id="@+id/moreabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/s_TextView19"
+            android:layout_marginTop="15dp"
+          
+            android:background="@drawable/preview_button" 
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+               android:text="More about the Host"
+                android:textColor="#FF1919"/>
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s1_TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/s_TextView16"
+            android:layout_below="@+id/s_TextView1"
+            android:layout_marginTop="37dp"
+             android:fontFamily="Lato"
+            android:text="TextView1" />
+
+        <ImageView
+            android:id="@+id/s1_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s1_TextView1"
+            android:layout_centerHorizontal="true"
+             android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+               android:background="@drawable/hr_line" 
+               
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        <com.cog.DropInn.CustomTextView
+            android:id="@+id/s_TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_imageView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+             android:fontFamily="Lato"
+            android:text="Amenities" />
+
+
+</RelativeLayout>

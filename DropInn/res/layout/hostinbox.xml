@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip"
+    android:background="#d3d3d3" 
+    android:id="@+id/inbox">
+
+    <com.cog.DropInn.CircularImageView
+        android:id="@+id/list_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/preview_profileimage" />
+
+    <!-- title1 Of Song -->
+
+
+    <!-- country1 Name -->
+
+
+    <!-- Rightend Duration -->
+
+
+    <!-- Rightend Arrow -->
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/title1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/list_image"
+        android:text="Guest name:"
+       
+        android:textSize="15dp"
+       
+       />
+    
+      <com.cog.DropInn.ThonTextView
+          android:id="@+id/title2"
+           android:fontFamily="fonts/Thonburi.ttf" 
+          android:layout_width="60dp"
+          android:layout_height="wrap_content"
+       
+          android:layout_alignTop="@+id/list_image"
+          android:layout_marginLeft="3dp"
+          android:layout_toRightOf="@+id/title1"
+          android:ellipsize="end"
+          android:singleLine="true"
+          android:text="Guest name:"
+          android:textColor="#565a5c"
+          android:textSize="15dp" />
+
+   <!-- <com.cog.DropInn.ThonTextView
+        android:id="@+id/roomtype1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView1"
+        android:layout_alignBottom="@+id/TextView1"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"      
+        android:singleLine="true"
+        android:text="Room type" /> -->
+
+    <!-- <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_image"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_toLeftOf="@+id/TextView5"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Status"
+        android:textColor="#408800" /> -->
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView2"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_below="@+id/title1"
+        android:layout_toLeftOf="@+id/TextView5"
+         android:layout_marginTop="5dp"
+        android:text="TextView1" />
+    
+        <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView21"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+       android:layout_below="@+id/title1"
+        android:layout_toRightOf="@+id/TextView2"
+       android:layout_marginTop="5dp"
+        android:text="-" />
+        
+           <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView22"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+         android:layout_below="@+id/title1"
+        android:layout_toRightOf="@+id/TextView21"
+       android:layout_marginTop="5dp"
+        android:text="TextView2" />
+           
+           
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView23"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView22"
+        
+         android:layout_alignLeft="@+id/title1"
+         android:layout_marginTop="5dp"
+        android:text="TextView1" />
+    
+        <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView24"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+      
+        android:layout_toRightOf="@+id/TextView23"
+       android:layout_below="@+id/TextView22"
+ android:layout_marginTop="5dp"
+        android:text="-" />
+        
+           <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView25"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+      
+        android:layout_toRightOf="@+id/TextView24"
+       android:layout_below="@+id/TextView22"
+        android:text="TextView2" 
+         android:layout_marginTop="5dp"/>
+           
+             <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView26"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView25"
+      
+         android:layout_alignLeft="@+id/title1"
+        android:textColor="#FF1919"
+        android:text="TextView1" 
+         android:layout_marginTop="5dp"/>
+    
+        <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView27"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+      
+        android:layout_toRightOf="@+id/TextView26"
+       android:layout_below="@+id/TextView25"
+        android:layout_marginTop="5dp"
+        android:text="-"
+      />
+        
+           <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView28"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/TextView27"
+       android:layout_below="@+id/TextView25"
+        android:text="TextView2" 
+       />
+           
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView4"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title1"
+        android:layout_alignBottom="@+id/title1"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="2 weeks ago"
+        android:textColor="#408800" />
+
+    <!-- <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView6"
+        android:layout_toLeftOf="@+id/TextView7"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="TextView1" /> -->
+
+ <!--    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView5"
+        android:layout_toLeftOf="@+id/TextView3"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="10dip" /> -->
+
+   <!--  <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/roomtype1"
+        android:layout_alignBottom="@+id/roomtype1"
+        android:layout_toLeftOf="@+id/roomtype1"
+        android:text="$" /> -->
+<!-- 
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView7"
+        android:layout_alignLeft="@+id/TextView4"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="TextView1" /> -->
+
+
+</RelativeLayout>

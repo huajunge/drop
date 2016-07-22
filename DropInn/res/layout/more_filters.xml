@@ -1,0 +1,644 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/desc_bg"
+    tools:context="com.cog.DropInn.MoreFilters" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/desc_header" />
+
+    <Button
+        android:id="@+id/back_Button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:background="@null"
+        android:onClick="back"
+        android:text="Cancel"
+        android:textColor="#FF1919" /> 
+        
+    
+    <Button
+        android:id="@+id/reset_Button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+   
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:background="@null"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="#FF1919" /> 
+ 
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/arrive_header" />
+            
+            
+               <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView250"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+           android:layout_below="@+id/ImageView01"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+                android:text="Guests"
+                 android:textColor="#666666"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView2"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImageView01"
+                android:layout_alignLeft="@+id/TextView1"
+                android:layout_marginBottom="15dp"
+                android:text="Select Date"
+                android:textColor="#FF1919"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView1"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView01"
+                android:layout_alignTop="@+id/ImageView01"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="23dp"
+                android:text="     Arrive"
+                android:textColor="#666666"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView3"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView1"
+                android:layout_alignRight="@+id/ImageView01"
+                android:layout_alignTop="@+id/TextView1"
+                android:layout_marginRight="30dp"
+                android:text="Depart    "
+                android:textColor="#666666"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView4"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView2"
+                android:layout_alignRight="@+id/TextView3"
+                android:text="     Select Date"
+                android:textColor="#FF1919"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView7"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Listing Type"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView7"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_bar" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView250"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_bar" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView9"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Price"
+                android:textColor="#666666"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView11"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView19"
+                android:layout_alignRight="@+id/TextView9"
+                android:layout_below="@+id/TextView9"
+                android:text="10"
+                android:textColor="#FF1919"
+                android:textStyle="bold" 
+                android:layout_marginTop="20dp"/>
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView12"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView9"
+                android:layout_below="@+id/TextView9"
+                android:text="    -  USD "
+                android:textColor="#FF1919"
+                android:textStyle="bold" 
+                android:layout_marginTop="20dp"/>
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView13"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView12"
+                android:layout_alignBottom="@+id/TextView12"
+                android:layout_toRightOf="@+id/TextView12"
+                android:text="1000"
+                android:textColor="#FF1919"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView14"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView13"
+                android:layout_alignBottom="@+id/TextView13"
+                android:layout_toRightOf="@+id/TextView13"
+                android:text=" per night"
+                android:textColor="#FF1919"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignTop="@+id/imageView2"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_minus" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignRight="@+id/imageView2"
+                android:layout_alignTop="@+id/imageView2"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_plus" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView16"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+               android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/imageView2"
+         
+                android:paddingTop="12dp"
+                android:text="1 "
+                android:textColor="#666666" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView17"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+                android:layout_below="@+id/seekBar1"
+                android:text="Listing Info"
+                android:textColor="#666666"
+                android:textStyle="bold" 
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView17"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_bar" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_alignTop="@+id/imageView7"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_minus" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_alignRight="@+id/imageView7"
+                android:layout_alignTop="@+id/imageView7"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_plus" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView19"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_alignLeft="@+id/TextView21"
+                android:layout_alignTop="@+id/imageView7"
+                android:layout_toLeftOf="@+id/TextView18"
+                android:paddingTop="10dp"
+                android:text="1 "
+                android:textColor="#666666" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView7"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_bar" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView8"
+                android:layout_alignLeft="@+id/imageView8"
+                android:layout_alignTop="@+id/imageView8"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_minus" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView8"
+                android:layout_alignRight="@+id/imageView8"
+                android:layout_alignTop="@+id/imageView8"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_plus" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView20"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView8"
+                android:layout_alignLeft="@+id/TextView22"
+                android:layout_alignRight="@+id/TextView18"
+                android:layout_alignTop="@+id/imageView8"
+                android:paddingTop="10dp"
+                android:text="Bed"
+                android:textColor="#666666" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView21"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView8"
+                android:layout_alignLeft="@+id/TextView23"
+                android:layout_alignTop="@+id/imageView8"
+                android:layout_toLeftOf="@+id/TextView20"
+                android:paddingTop="10dp"
+                android:text="1 "
+                android:textColor="#666666" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView8"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_bar" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView9"
+                android:layout_alignLeft="@+id/imageView9"
+                android:layout_alignTop="@+id/imageView9"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_minus" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView9"
+                android:layout_alignRight="@+id/imageView9"
+                android:layout_alignTop="@+id/imageView9"
+                android:background="@drawable/color_cursor"
+                android:src="@drawable/room_plus" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView22"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView9"
+                android:layout_alignLeft="@+id/TextView18"
+                android:layout_alignTop="@+id/imageView9"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Bathroom"
+                android:textColor="#666666" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView23"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView9"
+                android:layout_alignLeft="@+id/TextView7"
+                android:layout_alignTop="@+id/imageView9"
+                android:layout_gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/TextView22"
+                android:paddingTop="10dp"
+                android:text="1"
+                android:textColor="#666666" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView6"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView5"
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignRight="@+id/imageView4"
+                android:layout_below="@+id/imageView4"
+                android:text="Shared Room"
+                android:textColor="#666666"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView8"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView6"
+                android:layout_alignLeft="@+id/imageView6"
+                android:layout_alignRight="@+id/imageView6"
+                android:gravity="center"
+                android:text="Entire Room"
+                android:textColor="#666666"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView5"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView3"
+                android:layout_alignRight="@+id/imageView3"
+                android:layout_below="@+id/imageView3"
+                android:text="Private Room"
+                android:textColor="#666666"
+                android:textStyle="bold" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView18"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView19"
+                android:layout_alignLeft="@+id/TextView15"
+                android:layout_alignTop="@+id/imageView7"
+                android:paddingTop="10dp"
+                android:text="Bedroom"
+                android:textColor="#666666" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView15"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignLeft="@+id/TextView9"
+                android:layout_alignTop="@+id/imageView2"
+                android:paddingTop="12dp"
+                android:text="guests"
+                android:textColor="#666666" 
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageButton1"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageButton2"
+                android:layout_alignTop="@+id/imageView2"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_alignLeft="@+id/imageView11"
+                android:layout_alignTop="@+id/imageView7"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView9"
+                android:layout_alignLeft="@+id/imageView13"
+                android:layout_alignTop="@+id/imageView8"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView9"
+                android:layout_toRightOf="@+id/imageButton7"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_alignLeft="@+id/imageButton4"
+                android:layout_alignTop="@+id/imageView7"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView9"
+                android:layout_alignLeft="@+id/imageButton6"
+                android:layout_alignTop="@+id/imageView8"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView9"
+                android:layout_alignLeft="@+id/imageButton8"
+                android:layout_alignTop="@+id/imageView9"
+                android:src="@drawable/ver_line" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/TextView8"
+                android:layout_alignLeft="@+id/TextView3"
+                android:src="@drawable/home_room" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/TextView1"
+                android:layout_alignTop="@+id/imageView5"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/private_room1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/TextView5"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/shared" />
+
+            <com.cog.DropInn.SeekBarWithTwoThumb
+                android:id="@+id/seekBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_alignRight="@+id/imageView7"
+                android:layout_below="@+id/TextView10"
+                android:background="@drawable/bgh"
+                android:layout_marginTop="20dp" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView10"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView11"
+                android:layout_alignBottom="@+id/TextView11"
+                android:layout_toLeftOf="@+id/TextView11"
+                android:text="USD "
+                android:textColor="#FF1919"
+                android:textStyle="bold" 
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView9"
+                android:layout_alignRight="@+id/imageView9"
+                android:layout_below="@+id/imageView15"
+                android:layout_marginTop="82dp"
+                android:background="@drawable/green_header"
+                android:text="Save Filters"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_arrow" />
+ -->
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/desc_bg" >
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+         >    
+<RelativeLayout 
+    android:id="@+id/Frame1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"   > 
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:text="Cancellation Policy"
+        style="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:textColor="#666666" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView3"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="Flexible"
+        android:textColor="#666666"
+        style="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView4"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="15dp"
+        android:textColor="#666666"
+        style="@android:style/TextAppearance.Small"
+        android:text="com.cog.DropInn.ThonTextView" />
+
+    </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/Button"
+    android:background="@drawable/dark_box" />
+
+<Button 
+        android:id="@+id/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_header"/>
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="22dp"
+    android:src="@drawable/back_arrow" />
+
+<!-- <ImageView
+    android:id="@+id/imageView11"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/Button"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/dark_box" /> -->
+
+<com.viewpagerindicator.CirclePageIndicator
+    android:id="@+id/indicator"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/view_pager"
+    android:layout_alignParentLeft="true"
+    android:padding="10dip" />
+
+<com.cog.DropInn.ThonTextView
+    android:id="@+id/textView1"
+     android:fontFamily="fonts/Thonburi.ttf" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/imageView1"
+    android:layout_below="@+id/imageView1"
+     android:layout_marginTop="74dp"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:text="com.cog.DropInn.ThonTextView"/>
+
+<!-- <com.cog.DropInn.ThonTextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/textView2"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/view_pager"
+   android:text="SignUp"
+    android:gravity="center"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginRight="15dp" />
+
+<com.cog.DropInn.ThonTextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    
+    android:layout_alignTop="@+id/Button"
+    android:layout_marginLeft="15dp"
+    android:gravity="center"
+    android:text="Login"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold" /> -->
+
+<com.cog.DropInn.ThonTextView
+    android:id="@+id/textView2"
+     android:fontFamily="fonts/Thonburi.ttf" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/Button"
+    android:layout_alignBottom="@+id/Button"
+    android:layout_marginLeft="15dp"
+    android:text="Login"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<ImageButton
+    android:id="@+id/imageButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/view_pager"
+    
+    
+    android:layout_centerHorizontal="true"
+    android:background="@null"
+    android:src="@drawable/v_line" />
+
+<com.cog.DropInn.ThonTextView
+    android:id="@+id/textView3"
+     android:fontFamily="fonts/Thonburi.ttf" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/Button"
+    android:layout_alignBottom="@+id/Button"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="19dp"
+    android:text="SignUp    "
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+</RelativeLayout>

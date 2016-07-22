@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- When selected, use icon1 -->
+ <item android:drawable="@color/tab"
+       android:color="@color/tab_active"
+      android:state_selected="true" /> 
+      
+
+  <item android:drawable="@color/taby"
+      android:color="@color/tab_inactive"
+      android:state_selected="false" /> 
+</selector>

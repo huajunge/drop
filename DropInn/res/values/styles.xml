@@ -1,0 +1,44 @@
+<resources>
+
+         
+  
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        
+  
+    <item name="android:actionBarTabBarStyle">@style/HCLTheme</item>
+</style>
+
+
+  <style name="HCLTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/HCLActionBarStyle</item>
+        <item name="actionBarStyle">@style/HCLActionBarStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/HCLActionBarTabBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/HCLActionBarTabStyle</item>
+    </style>
+
+    <style name="HCLActionBarStyle" parent="android:style/Widget.Holo.ActionBar">
+       
+        <item name="android:titleTextStyle">@style/HCLActionBarTitle</item>
+    </style>
+
+    <style name="HCLActionBarTabBarStyle" parent="@android:style/Widget.Holo.ActionBar.TabBar">
+         <item name="android:divider">@android:color/transparent</item> //or use your transparent drawable image
+    <item name="android:showDividers">middle</item>
+    <item name="android:dividerPadding">0dp</item>
+    
+    </style>
+
+    <style name="HCLActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">#ffffff</item>
+        <item name="android:divider">@drawable/tabindicator</item>
+    </style>
+
+    <style name="HCLActionBarTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+       
+    </style>
+   
+</resources>

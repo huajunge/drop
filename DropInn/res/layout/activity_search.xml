@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desc_bg"
+    tools:context=".SearchActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/atv_places"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/scancel"
+        android:hint="Where to?"
+        android:textColorHint="#666666"
+        android:paddingLeft="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/search_box" />
+
+  <ImageView
+      android:id="@+id/clear"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_alignRight="@+id/atv_places"
+      android:layout_alignTop="@+id/imageView1"
+      android:layout_marginRight="23dp"
+      android:background="@drawable/cancel_search" />
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_alignLeft="@+id/atv_places"
+      android:layout_alignTop="@+id/atv_places"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="10dp"
+      android:background="@drawable/search_icon" />
+      <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/desc_header" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="15dp"
+        android:src="@drawable/backarrow" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView1"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/back"
+        android:gravity="center"
+        android:text="Search"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#666666"
+        android:textStyle="bold" />
+
+</RelativeLayout>

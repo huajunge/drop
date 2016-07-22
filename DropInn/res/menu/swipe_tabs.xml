@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cog.DropInn.Swipe_tabs" >
+
+    
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_drawer"
+          android:title="@string/action_search"
+          android:showAsAction="ifRoom" />
+    <!-- Settings, should always be in the overflow -->
+
+</menu>
+	

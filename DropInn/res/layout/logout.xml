@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EEEEEE" >
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Are you sure you want to Logout?"
+        android:textColor="#666666"
+        style="@android:style/TextAppearance.Medium" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView4"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="42dp"
+        android:textColor="#EEEEEE"
+        android:text="" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView2"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="38dp"
+        android:text="LOG OUT"
+        android:textColor="#FF1919" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView3"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_marginRight="55dp"
+        android:layout_toLeftOf="@+id/textView4"
+        android:text="CANCEL"
+        android:textColor="#666666" />
+
+</RelativeLayout>

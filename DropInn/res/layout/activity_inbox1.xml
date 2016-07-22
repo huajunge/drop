@@ -1,0 +1,73 @@
+<android.support.v4.app.FragmentTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        
+        <RelativeLayout
+             android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+             <ImageView
+     android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_5" />
+
+    <Button
+        android:id="@+id/imageBack"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+         android:textSize="16dp"
+        android:text="Close"
+        android:textColor="#FF1919"
+      android:layout_marginTop="15dp"
+        android:fontFamily="Lato"
+         android:textStyle="bold"
+        />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView14"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Inbox"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#565a5c"
+        android:textSize="16dp"
+           android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</android.support.v4.app.FragmentTabHost>

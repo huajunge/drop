@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desc_bg"
+    tools:context="com.cog.DropInn.Writetitle" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/desc_header" />
+
+    <EditText
+        android:id="@+id/editText1"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/desc_edit"
+        android:ems="10"
+        android:hint="Give your listing a descriptive headline"
+        android:maxLength="35"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColorHint="#b5b5b5"
+        android:textSize="17sp" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView2"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textColor="#666666"
+        android:textStyle="bold" />
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/frameLayout1" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/c_left" >
+
+        <RelativeLayout
+           android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView4"
+                  android:fontFamily="fonts/Thonburi.ttf"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="114dp"
+                android:textColor="#FF1919"
+                android:text="35"
+                 />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView5"
+                  android:fontFamily="fonts/Thonburi.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView4"
+                android:layout_alignBottom="@+id/TextView4"
+                android:layout_alignLeft="@+id/TextView4"
+                android:layout_marginLeft="21dp"
+                android:textColor="#FF1919"
+                android:text="characters left" />
+
+        </RelativeLayout>
+
+            
+    </FrameLayout>
+
+     <ImageView
+         android:id="@+id/imageView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/imageView1"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:padding="15dp"
+         android:background="@drawable/color_cursor"
+         android:src="@drawable/done" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5dfdf"
+    
+  >
+  
+    <!--  <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> -->
+  
+  <RelativeLayout
+    
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:id="@+id/Relative"
+    android:background="#ffffff">
+
+    <com.cog.DropInn.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+         
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@+id/clear"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:hint="Where are you going?"
+      
+        android:inputType="textAutoComplete|textAutoCorrect"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        android:dropDownWidth="match_parent"
+        android:singleLine="true"
+        android:textColorHint="#666666" >
+ 
+        </com.cog.DropInn.CustomAutoCompleteTextView>
+        
+    
+
+ <!--  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_alignLeft="@+id/atv_places"
+      android:layout_alignTop="@+id/atv_places"
+      android:layout_toLeftOf="@+id/cancel"
+      android:layout_marginTop="18dp"
+      android:layout_marginLeft="10dp"
+      android:background="@drawable/search_icon" 
+      android:visibility="invisible"/>   -->
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/cancel"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/atv_places"
+        android:layout_alignBottom="@+id/atv_places"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="Cancel"
+        android:textColor="#FF1919"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+     android:layout_toLeftOf="@+id/cancel"
+     android:layout_marginRight="5dp"
+      android:layout_centerVertical="true"
+        android:background="#ffffff"
+        android:src="@drawable/closed"
+        android:visibility="invisible" />
+    
+    </RelativeLayout>
+    
+     <ImageView
+          android:id="@+id/currentlocation"
+          android:layout_width="fill_parent"
+          android:layout_height="45dp"
+          android:layout_alignParentLeft="true"
+          android:background="#696969"
+          android:layout_below="@+id/Relative"
+           />
+     
+     <com.cog.DropInn.ThonTextView
+    android:id="@+id/TextView2"
+      android:fontFamily="fonts/Thonburi.ttf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:layout_below="@+id/Relative"
+    android:text="Use Current Location"
+    android:textSize="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#ffffff" />
+  
+  </RelativeLayout>
+  
+<!-- android:background="@drawable/search_box" -->

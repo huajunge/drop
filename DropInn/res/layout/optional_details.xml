@@ -1,0 +1,308 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context="com.cog.DropInn.Optional_details" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="90dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+               android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:text="  Long-Term Prices"
+             
+                android:gravity="center|left"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/hr_line_optional"
+                />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView2"
+                android:layout_alignLeft="@+id/TextView9"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imageView1"
+                android:fontFamily="fonts/Thonburi.ttf" 
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text="Off"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FF1919"
+                android:visibility="invisible" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/imageView1"
+                android:layout_alignTop="@+id/TextView3"
+             android:fontFamily="fonts/Thonburi.ttf" 
+                android:gravity="center|right"
+                android:paddingRight="20dp"
+                android:text="None"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#666666" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView3"
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:fontFamily="fonts/Thonburi.ttf" 
+                android:paddingLeft="30dp"
+                android:gravity="center"
+                android:text="Currency"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignLeft="@+id/frameLayout1"
+        android:layout_alignRight="@+id/frameLayout1"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_marginTop="68dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView5"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="20dp"
+                android:text="  About This Listings"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView5"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hr_line_optional" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView3"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="  Rooms &amp;  Beds"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/imageView2"
+                android:layout_alignTop="@+id/TextView6"
+           android:fontFamily="fonts/Thonburi.ttf" 
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FF1919" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/TextView5"
+                android:layout_below="@+id/imageView2"
+                android:gravity="center|left"
+               android:paddingLeft="27dp"
+                android:text="Amenities"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextView6"
+                android:src="@drawable/hr_line_optional" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                
+                 />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView10"
+                android:background="@null"
+              />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/desc_header" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+      
+        android:text="Price"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView11"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:text="Optional Details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF1919" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frameLayout2"
+        android:layout_alignRight="@+id/frameLayout2"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/preview_button"
+        android:text="Deactivate list"
+        android:fontFamily="Lato"
+         android:textColor="#fff" />
+    
+     <com.cog.DropInn.ThonTextView
+        android:id="@+id/Listing"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/button1"
+     
+        android:gravity="center"
+        android:text="Listing"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF1919" 
+        android:visibility="invisible"/>
+    
+    <ToggleButton 
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="28dp"
+     
+       
+      
+        android:layout_alignRight="@+id/button1"
+        android:textOn=""
+        android:textOff=""
+        android:focusable="false"
+        android:onClick="onToggleClicked"
+        android:focusableInTouchMode="false"
+        android:visibility="invisible"
+       />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_above="@+id/TextView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/TextView11"
+        android:background="@drawable/color_cursor"
+        android:src="@drawable/backarrow" />
+
+</RelativeLayout>

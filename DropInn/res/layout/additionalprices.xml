@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+  >
+  
+   <com.cog.DropInn.ThonTextView 
+     android:id="@+id/textview1"  
+       android:fontFamily="fonts/Thonburi.ttf" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="10dp"
+    android:text="Additional Prices"
+    android:textColor="#ffffff"
+    android:textAlignment="center"
+    android:textSize="16dp" />
+   
+    <ImageView
+                    android:id="@+id/s_imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textview1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+    
+    
+     <com.cog.DropInn.ThonTextView 
+     android:id="@+id/textview2"  
+       android:fontFamily="fonts/Thonburi.ttf" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_below="@+id/s_imageView6"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="50dp"
+     android:layout_marginLeft="20dp"
+    android:text="Weekly Price"
+    android:textColor="#ffffff"
+    android:textAlignment="center"
+    android:textSize="16dp" />
+     
+     
+      <com.cog.DropInn.ThonTextView 
+     android:id="@+id/textview3" 
+       android:fontFamily="fonts/Thonburi.ttf"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_below="@+id/textview2"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="50dp"
+     android:layout_marginLeft="20dp"
+    android:text="Monthly Price"
+    android:textColor="#ffffff"
+    android:textAlignment="center"
+    android:textSize="16dp" />
+      
+      
+        <com.cog.DropInn.ThonTextView 
+     android:id="@+id/textview4"  
+       android:fontFamily="fonts/Thonburi.ttf" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_below="@+id/textview2"
+ android:layout_toRightOf="@+id/textview7"
+   android:layout_alignTop="@+id/textview2"
+   android:layout_alignBottom="@+id/textview2"
+    
+    android:text=""
+    android:textColor="#ffffff"
+   
+    android:textSize="16dp" />
+             
+                      <com.cog.DropInn.ThonTextView
+                android:id="@+id/textview7"
+                  android:fontFamily="fonts/Thonburi.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/textview3"
+   android:layout_alignBottom="@+id/textview3"
+  android:layout_marginLeft="100dp"
+   android:layout_toRightOf="@+id/textview3"
+           android:textSize="16dp" 
+                android:text="m$"
+                android:textColor="#fff" />
+      
+      
+      
+         <ImageView 
+     android:id="@+id/s_imageView7"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:layout_marginRight="20dp"
+    android:layout_alignParentRight="true"
+android:layout_alignTop="@+id/textview1"
+android:layout_alignBottom="@+id/textview1"
+
+
+    android:background="@drawable/close"
+/>
+         
+        <View
+        
+    android:id="@+id/s_imageView8"   
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_below="@+id/textview3"
+       
+        
+        />
+
+        <com.cog.DropInn.ThonTextView
+            android:id="@+id/textview5"
+              android:fontFamily="fonts/Thonburi.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/textview7"
+             android:layout_alignTop="@+id/textview3"
+            android:layout_alignBottom="@+id/textview3"
+            android:layout_alignLeft="@+id/textview4"
+            android:layout_alignRight="@+id/textview4"
+            android:text=""
+           
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <com.cog.DropInn.ThonTextView
+            android:id="@+id/textview6"
+              android:fontFamily="fonts/Thonburi.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textview3"
+            android:layout_alignLeft="@+id/textview7"
+            android:text="w$"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+</RelativeLayout>

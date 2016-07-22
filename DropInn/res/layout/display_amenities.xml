@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+     >
+
+      <!--  <RadioGroup
+           android:id="@+id/radioGroup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/radioButton1"
+           android:layout_alignRight="@+id/currencyTextView1"
+           android:layout_alignTop="@+id/currencyTextView1" >
+
+       </RadioGroup> -->
+
+       <CheckBox
+           android:id="@+id/check"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:layout_alignTop="@+id/amenitiesTextView1" />
+           
+
+       <com.cog.DropInn.ThonTextView
+           android:id="@+id/amenities"
+            android:fontFamily="fonts/Thonburi.ttf" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="23dp"
+           android:text="amenitiesname"
+           
+           android:textColor="#0B0719"
+           android:textSize="15dp" />
+
+</RelativeLayout>

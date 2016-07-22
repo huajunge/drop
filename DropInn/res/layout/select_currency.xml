@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+     >
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/currencyTextView1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"          
+        android:text="cur_name"
+        android:textSize="15dp" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/currencyTextView2"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/moreoptionsTextView1"
+        android:layout_centerHorizontal="true"
+        android:text="symbol"
+        android:textSize="15dp"
+        />
+
+       <!-- <RadioGroup
+           android:id="@+id/radioGroup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/radioButton1"
+           android:layout_alignRight="@+id/currencyTextView1"
+           android:layout_alignTop="@+id/currencyTextView1" >
+
+       </RadioGroup> -->
+
+        <RadioButton
+           android:id="@+id/radioButton1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@+id/currencyTextView1"
+           android:layout_alignTop="@+id/currencyTextView1"
+           android:layout_marginRight="18dp" 
+             android:checked="false"
+     android:focusable="false"
+     android:clickable="false"
+           
+           /> 
+
+       <ImageView
+           android:id="@+id/imageView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/currencyTextView1"
+           android:layout_marginRight="44dp"
+           android:layout_toLeftOf="@+id/currencyTextView2"
+           android:src="@drawable/ver_line" />
+
+</RelativeLayout>
+

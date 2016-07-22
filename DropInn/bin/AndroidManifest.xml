@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cog.DropInn"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <permission
+        android:name="com.example.googlemapmovepinnotmove.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.email.ACCOUNT_INTENT" />
+    <uses-feature android:name="android.hardware.microphone" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    
+    
+
+    <application
+        android:name="info.androidhive.customlistviewvolley.app.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/menu"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+      
+ <!--        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="993325747363804"/>  -->
+          
+       
+        <!--  <activity android:name="com.facebook.FacebookActivity"
+          android:configChanges=
+                 "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+          android:theme="@android:style/Theme.Translucent.NoTitleBar"
+          android:label="@string/app_name" />
+        
+          <provider android:authorities="com.facebook.app.FacebookContentProvider993325747363804"
+          android:name="com.facebook.FacebookContentProvider"
+          android:exported="true" -->
+        
+          
+        
+        
+        <activity
+            android:name=".Swipe_tabs"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/activity_main"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        
+           <activity
+            android:name=".Inbox_detailshost"
+            android:label="@string/activity_main"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        
+              <activity
+            android:name=".ReservationDetail"
+            android:label="@string/activity_main"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        
+          <activity
+            android:name=".swipe_invention"
+            android:label="@string/activity_main"
+            android:screenOrientation="portrait" 
+             android:theme="@style/HCLTheme"
+             android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Optional_amenities1"
+            android:label="@string/app_name"
+            android:largeHeap="true" >
+             </activity>
+               <activity
+            android:name=".Upcomingdetails"
+            android:label="@string/app_name"
+            android:largeHeap="true" >
+             </activity>
+               <activity
+            android:name=".Previousdetails"
+            android:label="@string/app_name"
+            android:largeHeap="true" >
+             </activity>
+             
+        <!--    <activity
+            android:name=".Sharing"
+            android:label="@string/app_name" >
+             </activity> -->
+        <activity
+            android:name=".Signup"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Signin"
+            android:label="@string/activity_signin"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        
+         <activity
+            android:name=".Signin_signup1"
+            android:label="@string/activity_main"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Homepage"
+            android:label="@string/activity_homepage"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name="com.parse.integratingfacebook.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+          />
+        <activity
+            android:name="com.parse.integratingfacebook.UserDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+             />
+        <activity
+            android:name="com.parse.integratingfacebook.IntegratingFacebookApplication"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+          />
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+        />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:value="@string/app_id"
+           />
+
+        <activity
+            android:name=".Forgotpassword"
+            android:label="@string/title_activity_forgotpassword"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Discover"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+          <activity
+            android:name=".Inbox1"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name="info.android.tabsswipe.MainFragment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Propertytype"
+            android:label="@string/title_activity_prototype"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Googlemap"
+            android:label="@string/title_activity_googlemap"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="314265" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA5ayiCLO5L2tQktuPsj_ZX1N3TMtumVAc" />
+
+        <activity
+            android:name=".Rooms_beds"
+            android:label="@string/title_activity_rooms_beds"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".List_your_space"
+            android:label="@string/title_activity_list_your_space"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Listspace"
+            android:label="@string/title_activity_listspace"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Multiimage"
+            android:label="@string/title_activity_listspace"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Writeprice"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Writesummary"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Writetitle"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Optional_details"
+            android:label="@string/title_activity_optional_details"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Longterm_price"
+            android:label="@string/title_activity_longterm_price"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Optional_rooms_beds"
+            android:label="@string/title_activity_optionapl_rooms_beds"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Moreoptions_listview"
+            android:label="@string/title_activity_moreoptions_listview"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Moreoptions_TextView"
+            android:label="@string/title_activity_moreoptions_TextView"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Select_currency"
+            android:label="@string/title_activity_select_currency"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Writedescription"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Writeaddress"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Desc_space"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Desc_guest"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Desc_guestinteract"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Desc_neighbour"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Desc_getaround"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Desc_other"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Desc_house"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Optional_listtype"
+            android:label="@string/title_activity_optional_listtype"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Preview_page"
+            android:label="@string/title_activity_preview_page"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search_page"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Search_result"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Optional_amenities"
+            android:label="@string/title_activity_optional_amenities"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Yourlisting"
+            android:label="@string/title_activity_yourlisting"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Detail_page"
+            android:label="@string/title_activity_detail_page"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Italy"
+            android:label="@string/title_activity_italy"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".MoreFilters"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Unitedkingdom"
+            android:label="@string/title_activity_unitedkingdom"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        
+        <activity
+            android:name=".View_profile"
+            android:label="@string/title_activity_view_profile"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        
+        <activity
+            android:name=".Edit_list"
+            android:label="@string/title_activity_edit_list"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+       <activity
+            android:name=".Bookit_page"
+            android:label="@string/title_activity_bookit_page"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Edit_profile"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Edit_name"
+            android:label="@string/title_activity_edit_name" 
+            android:screenOrientation="portrait"
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Edit_aboutme"
+            android:label="@string/title_activity_edit_aboutme" 
+            android:screenOrientation="portrait"
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Edit_email"
+            android:label="@string/title_activity_edit_email" 
+            android:screenOrientation="portrait"
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Edit_location"
+            android:label="@string/title_activity_edit_location"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Edit_school"
+            android:label="@string/title_activity_edit_school"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Edit_work"
+            android:label="@string/title_activity_edit_work" 
+            android:screenOrientation="portrait"
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Edit_language"
+            android:label="@string/title_activity_edit_language"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+            android:name=".Other_profile"
+            android:label="@string/title_activity_other_profile"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        <activity
+            android:name=".Inbox"
+            android:label="@string/title_activity_inbox"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+          <activity
+            android:name=".Signin_signup"
+            android:label="@string/title_activity_inbox"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        <activity
+         
+            android:name=".Inbox_details"
+            android:label="@string/title_activity_inbox_details"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        
+        
+         <activity
+         	
+            android:name=".Swipe_tabshost"   
+            android:theme="@style/HCLTheme"      
+            android:label="@string/title_activity_swipe_tabs"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+           <activity
+         	
+            android:name=".Why_host"   
+               
+            android:label="@string/title_activity_swipe_tabs"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+         <activity
+         	
+            android:name=".How_it_works"                   
+            android:label="@string/title_activity_swipe_tabs"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        
+         <activity
+         	
+            android:name=".Setting_currency"                   
+            android:label="@string/title_activity_swipe_tabs"
+            android:screenOrientation="portrait" 
+            android:largeHeap="true">
+        </activity>
+        
+          <activity
+         	
+            android:name=".Search"                   
+            android:label="@string/title_activity_swipe_tabs"
+            android:screenOrientation="portrait"
+            android:largeHeap="true" >
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cog.DropInn.Optional_amenities" >
+
+<ListView
+    android:id="@+id/listView10"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/button1" >
+
+</ListView>
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:text="Apply amenities"
+    android:textColor="#ffff"
+    android:background="@drawable/green_header" />
+
+<ImageButton
+    android:id="@+id/imageButton2"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/button1"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="19dp"
+    android:background="@drawable/color_cursor"
+    android:src="@drawable/backarrow" 
+    />
+
+</RelativeLayout>

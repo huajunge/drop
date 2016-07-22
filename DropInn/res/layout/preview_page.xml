@@ -1,0 +1,687 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cog.DropInn.Preview_page"
+     >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+   
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/preview_header" />
+
+    
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/color_cursor"
+        android:src="@drawable/backarrow" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#a7a6a7" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:ellipsize="end"
+                android:textColor="#585a59"
+                android:singleLine="true"
+                style="@android:style/TextAppearance.Large"
+                android:text="Title" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/preview_profileimage" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textColor="#82898d"
+                style="@android:style/TextAppearance.Medium"
+                android:text="Home type" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_toLeftOf="@+id/textView4"
+                android:textColor="#82898d"
+                style="@android:style/TextAppearance.Medium"
+                android:text="Hosted by " />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/hr_line" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/preview_groups" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_alignLeft="@+id/imageView6"
+                android:layout_alignRight="@+id/imageView6"
+                android:fontFamily="Lato"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#82898d" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_alignRight="@+id/imageView7"
+                android:fontFamily="Lato"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#82898d" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="10dp"
+                android:text="Guests"
+                style="@android:style/TextAppearance.Small"
+                android:textColor="#82898d" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_alignLeft="@+id/textView6"
+                android:fontFamily="Lato"
+                android:paddingLeft="5dp"
+                android:text="rooms"
+                style="@android:style/TextAppearance.Small"
+                android:textColor="#82898d" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/preview_img_map" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView8"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="23dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/preview_textbox" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                style="@android:style/TextAppearance.Medium"
+                android:textColor="#585a59"
+                android:text="Description" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView13"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="Lato"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:text="TextView1"
+                android:textColor="#82898d"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView13"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/preview_button"
+                android:text="Read more"
+                android:textColor="#fff" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/listing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#585a59"
+                style="@android:style/TextAppearance.Medium"
+                android:text="Listing" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/listing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" >
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/listingtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="fonts/air.otf"
+                    android:text="Listing type"
+                    style="@android:style/TextAppearance.Small"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/listingtype1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/listingtype"
+                    android:layout_alignBottom="@+id/listingtype"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="18dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="TextView1"
+                    android:textColor="#82898d" />
+
+                <ImageView
+                    android:id="@+id/s_imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/listingtype"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hr_line" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/listingtype"
+                    android:layout_below="@+id/s_imageView1"
+                    android:layout_marginTop="10dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="Accommodates"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/s_textView4"
+                    android:layout_alignBottom="@+id/s_textView4"
+                    android:layout_alignRight="@+id/listingtype1"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="None"
+                    android:textColor="#82898d" />
+
+                <ImageView
+                    android:id="@+id/s_imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/s_textView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hr_line" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/s_textView4"
+                    android:layout_below="@+id/s_imageView2"
+                    android:layout_marginTop="10dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="Bedrooms"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/s_textView6"
+                    android:layout_alignBottom="@+id/s_textView6"
+                    android:layout_alignRight="@+id/s_textView5"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="com.cog.DropInn.ThonTextView"
+                    android:textColor="#82898d" />
+
+                <ImageView
+                    android:id="@+id/s_imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/s_textView6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hr_line" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/s_textView6"
+                    android:layout_below="@+id/s_imageView3"
+                    android:layout_marginTop="10dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="Beds"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/s_textView8"
+                    android:layout_alignBottom="@+id/s_textView8"
+                    android:layout_alignRight="@+id/s_textView7"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="com.cog.DropInn.ThonTextView"
+                    android:textColor="#82898d" />
+
+                <ImageView
+                    android:id="@+id/s_imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/s_textView9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hr_line" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/s_textView8"
+                    android:layout_below="@+id/s_imageView4"
+                    android:layout_marginTop="10dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="Bathrooms"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/s_textView10"
+                    android:layout_alignBottom="@+id/s_textView10"
+                    android:layout_alignRight="@+id/s_textView9"
+                    android:fontFamily="Lato"
+                    android:text="com.cog.DropInn.ThonTextView"
+                    android:textColor="#82898d" />
+
+                <ImageView
+                    android:id="@+id/s_imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/s_textView10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hr_line" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_imageView5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    style="@android:style/TextAppearance.Medium"
+                    android:text="Details"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/s_textView10"
+                    android:layout_below="@+id/s_textView12"
+                    android:layout_marginTop="24dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="Cancellation Policy"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/s_textView13"
+                    android:layout_alignBottom="@+id/s_textView13"
+                    android:layout_alignRight="@+id/s_textView11"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="com.cog.DropInn.ThonTextView"
+                    android:textColor="#FF1919" />
+
+                <ImageView
+                    android:id="@+id/s_imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/s_textView13"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hr_line" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/s_textView13"
+                    android:layout_below="@+id/s_imageView6"
+                    android:layout_marginTop="10dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="Availability"
+                    android:textColor="#82898d" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/s_textView15"
+                    android:layout_alignBottom="@+id/s_textView15"
+                    android:layout_alignRight="@+id/s_textView14"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="com.cog.DropInn.ThonTextView"
+                    android:textColor="#FF1919" />
+
+                <ImageView
+                    android:id="@+id/s_imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/s_textView15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hr_line" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_imageView7"
+                    android:layout_marginTop="25dp"
+                    android:layout_toLeftOf="@+id/s_textView12"
+                    android:textColor="#82898d"
+                    style="@android:style/TextAppearance.Medium"
+                    android:text="About " />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/s_textView17"
+                    android:layout_alignBottom="@+id/s_textView17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/s_textView17"
+                    style="@android:style/TextAppearance.Medium"
+                    android:text="Ramesh kannan"
+                    android:textColor="#82898d" />
+
+                <ImageView
+                    android:id="@+id/s_imageView8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/s_textView17"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/preview_profileimage" />
+
+                <com.cog.DropInn.CustomTextView
+                    android:id="@+id/s_textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_imageView8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="39dp"
+                    style="@android:style/TextAppearance.Small"
+                    android:text="com.cog.DropInn.ThonTextView"
+                    android:textColor="#82898d" />
+
+                <Button
+                    android:id="@+id/moreabout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/s_textView19"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/preview_button"
+                    android:text="More about the Host"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView9"
+                android:layout_alignTop="@+id/imageView9"
+                android:ellipsize="end"
+                style="@android:style/TextAppearance.Small"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="com.cog.DropInn.ThonTextView"
+                android:textColor="#82898d" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView17"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView17"
+                android:background="#99000000"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:text="$"
+                style="@android:style/TextAppearance.Medium"
+                android:textColor="#fff" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_alignRight="@+id/imageView5"
+                android:layout_below="@+id/imageView6"
+                android:gravity="center"
+                android:text="1"
+                style="@android:style/TextAppearance.Small"
+                android:textColor="#82898d" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView9"
+                android:layout_alignBottom="@+id/textView9"
+                android:layout_alignLeft="@+id/textView7"
+                
+                android:text="beds"
+                style="@android:style/TextAppearance.Small"
+                android:textColor="#82898d" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/imageView6"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/textView12"
+                android:src="@drawable/preview_beds" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignRight="@+id/listing"
+                android:src="@drawable/preview_rooms" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_toRightOf="@+id/textView14"
+                android:background="#99000000"
+                android:layout_marginBottom="15dp"
+                android:minHeight="35dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=" "
+                style="@android:style/TextAppearance.Large"
+                android:textColor="#fff" />
+
+            <com.cog.DropInn.CustomTextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignLeft="@+id/imageView6"
+                android:text="" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.cog.DropInn.CustomTextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:capitalize="words"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:inputType="text"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#585a59"
+        style="@android:style/TextAppearance.Medium"
+        android:textSize="18sp" />
+
+    <com.cog.DropInn.CustomTextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#585a59"
+        style="@android:style/TextAppearance.Small"
+        android:textSize="15sp" />
+
+</RelativeLayout>

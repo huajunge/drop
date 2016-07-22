@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+     android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_5" />
+
+    <Button
+        android:id="@+id/imageBack"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+         android:textSize="16dp"
+        android:text="Close"
+        android:textColor="#FF1919"
+       
+        android:fontFamily="Lato"
+         android:textStyle="bold"
+        />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView14"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Settings"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#565a5c"
+        android:textSize="16dp"
+        
+        android:textStyle="bold" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView3"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/TextView9"
+      
+        
+
+        android:paddingLeft="30dp"
+        android:text="Currency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#565a5c" />
+    
+     <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+        android:layout_below="@+id/TextView3"
+          android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+            android:background="@drawable/h_line"/>
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView3"
+        android:layout_marginTop="26dp"
+        
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:text="Version"
+        android:textColor="#565a5c"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView5"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView3"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="3dp"
+        android:text="1.1"
+        android:textColor="#565a5c"
+    
+        
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        /> 
+     
+       <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView5"
+          android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+            android:background="@drawable/h_line"/>
+    
+    <FrameLayout
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+       android:layout_below="@+id/textView5"
+         android:layout_marginTop="15dp"
+        android:background="@null">
+
+        <RelativeLayout
+           android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView4"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="30dp"
+                android:text="Log Out"
+                android:textColor="#565a5c"
+                android:textSize="18sp" />
+            
+              <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+        android:layout_below="@+id/TextView4"
+          android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+            android:background="@drawable/h_line"/>
+
+         
+        </RelativeLayout>
+
+            
+</FrameLayout>
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView9"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView5"
+        android:layout_alignParentRight="true"
+    
+        android:gravity="center"
+        android:paddingRight="40dp"
+        android:text="None"
+        android:textColor="#FF1919"
+        android:textSize="16dp" />
+
+</RelativeLayout>

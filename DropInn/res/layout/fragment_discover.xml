@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cog.DropInn.Discover" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+         android:layout_alignParentLeft="true"  >
+
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/image1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:background="@drawable/image2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView2"
+                android:background="@drawable/image3" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView3"
+                android:background="@drawable/image4" />
+
+        
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView1"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17dp"
+                android:text="Search"
+              
+                android:textColor="#fff"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView2"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="INDIA"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView3"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:text="United states"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/TextView1"
+                android:layout_marginTop="23dp"
+                android:background="@null"
+                android:src="@drawable/discover_search" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/TextView4"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton1"
+                android:layout_alignTop="@+id/imageButton1"
+                android:layout_toLeftOf="@+id/TextView1"
+          
+                android:gravity="center"
+                android:text="Where to ?" />
+
+       </RelativeLayout> 
+
+    </ScrollView>
+
+</RelativeLayout>

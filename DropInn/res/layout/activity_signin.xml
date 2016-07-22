@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    tools:context="com.cog.DropInn.Signin" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/email_bg_image" />
+     <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="300dp"
+        android:layout_height="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"       
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="260dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_signin"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="35"
+            android:paddingLeft="8dp"
+            android:singleLine="True"
+            android:textColorHint="#FCF9F9" 
+            android:textColor="#FCF9F9"
+            android:fontFamily="sanserif"
+            android:textCursorDrawable="@drawable/color_cursor1"/>
+        
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="260dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="73dp"
+            android:background="@drawable/text_signin"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="8dp"
+            android:textColorHint="#FCF9F9"
+             android:textColor="#FCF9F9" 
+              android:textCursorDrawable="@drawable/color_cursor1">
+               <requestFocus/>
+       </EditText>
+    </FrameLayout>
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView1"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frameLayout2"
+        android:layout_alignLeft="@+id/frameLayout2"
+        android:layout_marginBottom="8dp"
+        android:text="Forgot Password ?"       
+    
+		android:textStyle="bold"
+		android:textColor="#fff"
+         />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView2"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView1"
+        android:layout_alignBottom="@+id/TextView1"
+        android:layout_alignRight="@+id/frameLayout2"
+        android:text="Sign Up"  
+        android:textStyle="bold"      
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/sign_in"
+        android:fontFamily="Lato"
+        android:text="Log in"
+        android:textColor="#ffff" />
+
+  <!--   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageButton1"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/logo" /> -->
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/back_arrow"
+        android:background="@null" />
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/textView3"
+          android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:gravity="center"
+        android:text="Sign In with Email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

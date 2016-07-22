@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context="com.cog.DropInn.Optional_listtype"
+     android:background="@drawable/background1" >
+
+      <ImageView
+          android:id="@+id/imageView3"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginBottom="3dp"
+          android:src="@drawable/color_cursor"
+          android:background="@drawable/type_bg" />
+      <com.cog.DropInn.ThonTextView
+          android:id="@+id/TextView3"
+           android:fontFamily="fonts/Thonburi.ttf" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/imageView3"
+          android:layout_marginTop="14dp"
+          android:layout_toRightOf="@+id/imageButton2"
+          android:text="Entire Home"
+          android:textStyle="bold"
+          android:textColor="#666666"
+          android:textSize="15sp"
+          android:layout_marginLeft="10dp" />
+      <com.cog.DropInn.ThonTextView
+          android:id="@+id/TextView4"
+           android:fontFamily="fonts/Thonburi.ttf" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/TextView3"
+          android:layout_below="@+id/TextView3"
+          android:text="Your entire home"
+          android:textColor="#666666"
+          android:textSize="12sp" />
+      <ImageButton
+          android:id="@+id/imageButton2"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/imageView3"
+          android:layout_alignParentLeft="true"
+          
+          android:background="@null"
+          android:src="@drawable/home" />
+
+      <ImageView
+          android:id="@+id/imageView4"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/imageView3"
+          android:layout_marginBottom="3dp"
+          android:src="@drawable/color_cursor"
+          android:background="@drawable/type_bg" />
+      <com.cog.DropInn.ThonTextView
+          android:id="@+id/TextView6"
+           android:fontFamily="fonts/Thonburi.ttf" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/TextView5"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/imageButton3"
+          android:text="A single room in your home	"
+           android:textColor="#666666"
+          android:textSize="12sp"  />
+      <com.cog.DropInn.ThonTextView
+          android:id="@+id/TextView5"
+           android:fontFamily="fonts/Thonburi.ttf" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/imageView4"
+          android:layout_marginTop="16dp"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/imageButton3"
+          android:text="Private Room" 
+          android:textStyle="bold"
+          android:textColor="#666666"
+          android:textSize="15sp"
+          />
+
+      <ImageView
+          android:id="@+id/ImageView01"
+          android:layout_width="fill_parent"
+          android:layout_height="60dp"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/imageView4"
+          android:src="@drawable/color_cursor"
+          android:background="@drawable/type_bg" />
+
+      <ImageButton
+          android:id="@+id/imageButton1"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/imageView4"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:background="@null"
+          android:src="@drawable/home" />
+      <com.cog.DropInn.ThonTextView
+          android:id="@+id/TextView7"
+           android:fontFamily="fonts/Thonburi.ttf" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/TextView6"
+          android:layout_alignTop="@+id/ImageView01"
+          android:layout_marginTop="17dp"
+          android:text="Shared Room" 
+          android:textStyle="bold"
+          android:textColor="#666666"
+          android:textSize="15sp"/>
+ <com.cog.DropInn.ThonTextView
+          android:id="@+id/TextView8"
+           android:fontFamily="fonts/Thonburi.ttf" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/TextView7"
+          android:layout_toRightOf="@+id/imageButton4"
+          android:layout_marginLeft="10dp"
+          android:text="A Couch,airbed, etc"
+           android:textColor="#666666"
+          android:textSize="12sp"  />
+      <ImageButton
+          android:id="@+id/imageButton3"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/ImageView01"
+          android:layout_below="@+id/imageView3"
+          android:layout_toLeftOf="@+id/TextView3"
+          android:background="@null"
+          android:src="@drawable/pr_room" />
+
+      <ImageButton
+          android:id="@+id/imageButton4"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/ImageView01"
+          android:layout_alignParentLeft="true"
+          android:layout_alignTop="@+id/ImageView01"
+          android:background="@null"
+          android:src="@drawable/sh_room" />
+
+</RelativeLayout>

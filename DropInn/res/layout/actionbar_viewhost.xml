@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+  
+ >
+
+<ImageView
+        android:id="@+id/Img1A"
+        android:layout_height="2dp"
+        android:layout_width="10dp"
+    android:layout_alignParentBottom="true"
+   android:layout_marginTop="3dp"
+      android:layout_alignLeft="@+id/Img1"
+      android:layout_alignRight="@+id/Img1"
+      android:visibility="visible"
+        android:background="#43C6DB" />
+
+<ImageView
+        android:id="@+id/Img2A"
+        android:layout_height="2dp"
+        android:layout_width="10dp"
+    android:layout_alignParentBottom="true"
+      android:layout_marginTop="3dp"
+      android:layout_alignLeft="@+id/Img2"
+      android:layout_alignRight="@+id/Img2"
+      android:visibility="invisible"
+        android:background="#43C6DB" />
+
+<ImageView
+        android:id="@+id/Img3A"
+        android:layout_height="2dp"
+        android:layout_width="10dp"
+   android:layout_alignParentBottom="true"
+      android:layout_marginTop="3dp"
+      android:layout_alignLeft="@+id/Img3"
+      android:layout_alignRight="@+id/Img3"
+     android:visibility="invisible"
+        android:background="#FF1919" 
+        />
+
+<ImageView
+        android:id="@+id/Img4A"
+        android:layout_height="2dp"
+        android:layout_width="10dp"
+   android:layout_alignParentBottom="true"
+      android:layout_marginTop="3dp"
+      android:layout_alignLeft="@+id/Img4"
+      android:layout_alignRight="@+id/Img4"
+      android:visibility="invisible"
+        android:background="#FF1919" 
+         />
+
+<ImageView
+    android:id="@+id/Img5"
+    android:layout_width="60dp"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+   android:layout_marginTop="8dp"
+    android:layout_toRightOf="@+id/Img4"
+    android:background="@null"
+    android:src="@drawable/profile_nor" />
+
+<ImageView
+    android:id="@+id/Img1"
+    android:layout_width="60dp"
+    android:layout_height="30dp"
+    android:layout_alignParentLeft="true"
+   android:layout_marginTop="8dp"
+    android:layout_toLeftOf="@+id/Img2"
+    android:background="@null"
+    android:src="@drawable/hostlist" />
+
+<ImageView
+    android:id="@+id/Img2"
+    android:layout_width="60dp"
+    android:layout_height="30dp"
+   android:layout_marginTop="8dp"
+    android:layout_marginRight="17dp"
+    android:layout_toLeftOf="@+id/Img3"
+    android:background="@null"
+    android:src="@drawable/yourlisting_nor" />
+
+<ImageView
+    android:id="@+id/Img4"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+   android:layout_marginTop="3dp"
+    android:layout_marginLeft="16dp"
+    android:layout_toRightOf="@+id/Img3"
+    android:background="@null"
+    android:src="@drawable/travel_nor"
+     android:visibility="invisible"  />
+
+<ImageView
+    android:id="@+id/Img3"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+   android:layout_marginTop="3dp"
+    android:layout_centerHorizontal="true"
+    android:background="@null"
+    android:src="@drawable/msg_nor"
+    android:visibility="invisible" />
+
+</RelativeLayout>

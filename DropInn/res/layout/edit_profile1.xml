@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/desc_bg">
+
+    <com.cog.DropInn.ThonTextView
+        android:id="@+id/TextView1"
+         android:fontFamily="fonts/Thonburi.ttf" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Private Details"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/location"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Location"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#666666" />
+
+            <ImageView
+                android:id="@+id/loc_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/hr_line_profile" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/work"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ph_line"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/school"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Work"
+                android:textColor="#666666"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/school_arrow"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/sc_line"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/school"
+            
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text="None"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FF1919" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/school"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/loc_line"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="School"
+                android:textColor="#666666"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 />
+
+            <ImageView
+                android:id="@+id/sc_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/school"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/hr_line_profile" />
+
+            <ImageButton
+                android:id="@+id/location_arrow"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/location"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:src="@drawable/right_arrow_details" />
+
+            <ImageView
+                android:id="@+id/ph_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/sc_line"
+                android:layout_marginTop="51dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/hr_line_profile" />
+
+            <ImageButton
+                android:id="@+id/work_arrow"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ph_line"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/school_arrow"
+                android:background="@null"
+                android:src="@drawable/right_arrow_details" />
+
+            <com.cog.DropInn.ThonTextView
+                android:id="@+id/language"
+                 android:fontFamily="fonts/Thonburi.ttf" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/work"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Language"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#666666" />
+
+            <ImageButton
+                android:id="@+id/language_arrow"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/language"
+                android:background="@null"
+                android:src="@drawable/right_arrow_details" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
